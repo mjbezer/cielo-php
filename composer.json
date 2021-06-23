@@ -1,5 +1,5 @@
 {
-    "name": "criarenet/cielo-php",
+    "name": "mjbezer/cielo-php",
     "description": "Camada de pagamento por cartão de crédito utilizando SDK Oficial Cielo",
     "type": "package",
     "license": "MIT",
