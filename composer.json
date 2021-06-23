@@ -1,0 +1,22 @@
+{
+    "name": "criarenet/cielo-php",
+    "description": "Camada de pagamento por cartão de crédito utilizando SDK Oficial Cielo",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marcelo Bezerra",
+            "email": "marcelo.bezerra@criarenet.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "developercielo/api-3.0-php": "^1.0"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "criarenet\\Cielo\\": "/src/Cielo"
+        }
+    }
+}
