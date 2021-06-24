@@ -14,9 +14,15 @@
         "developercielo/api-3.0-php": "^1.0"
     },
     "minimum-stability": "dev",
+    "repositories": [
+        {
+           "type": "package",
+           "url": "https://github.com/mjbezer/cielo-php.git" 
+        }
+      ],
     "autoload": {
         "psr-4": {
-            "criarenet\\Cielo\\": "/src/Cielo"
+            "criarenet\\Cielo\\": "/src"
         }
     }
 }
