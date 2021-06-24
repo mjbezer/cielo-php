@@ -1,12 +1,11 @@
 <?php
 
-namespace Criarenet\Cielo;
+namespace Mjbezer\Cielo;
 
 use Cielo\API30\Merchant;
 use Cielo\API30\Ecommerce\Sale;
 use Cielo\API30\Ecommerce\CieloEcommerce;
 use Cielo\API30\Ecommerce\Payment;
-use Cielo\API30\Ecommerce\CreditCard;
 use Cielo\API30\Ecommerce\Request\CieloRequestException;
 
 
@@ -15,12 +14,10 @@ class SingleCreditCardPayment {
     private $environmentSetup;
     private $brandSetup;
 
-    public function __construct(
-        EnvironmentSetup $environmentSetup, 
-        BrandSetup $brandSetup)
+    public function __construct()
     {
-        $this->environmentSetup = $environmentSetup;
-        $this->brandSetup = $brandSetup;
+        $this->environmentSetup = new EnvironmentSetup();
+        $this->brandSetup = new BrandSetup();
     }
 
     public function singleTransaction($dataTransaction)
