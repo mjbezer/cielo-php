@@ -1,28 +1,22 @@
 {
     "name": "mjbezer/cielo-php",
-    "description": "Camada de pagamento por cartão de crédito utilizando SDK Oficial Cielo",
+    "description": "Camanda de pagamento por cartão de crédito utilizando SDK Oficial Cielo",
     "type": "package",
+    "require": {
+        "developercielo/api-3.0-php": "1.0",
+        "php": "7.3"
+    },
     "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mjbezer\\CieloPhp\\": "src/"
+        }
+    },
     "authors": [
         {
             "name": "Marcelo Bezerra",
             "email": "marcelo.bezerra@criarenet.com"
         }
     ],
-    "require": {
-        "php": "^7.3|^8.0",
-        "developercielo/api-3.0-php": "^1.0"
-    },
-    "minimum-stability": "dev",
-    "repositories": [
-        {
-           "type": "package",
-           "url": "https://github.com/mjbezer/cielo-php.git" 
-        }
-      ],
-    "autoload": {
-        "psr-4": {
-            "criarenet\\Cielo\\": "/src"
-        }
-    }
+    "minimum-stability": "dev"
 }
