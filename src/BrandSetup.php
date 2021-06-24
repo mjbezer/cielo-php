@@ -1,6 +1,6 @@
 <?php
 
-namespace Criarenet\Cielo;
+namespace Mjbezer\Cielo;
 
 use Cielo\API30\Ecommerce\CreditCard;
 

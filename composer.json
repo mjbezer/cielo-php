@@ -9,7 +9,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Mjbezer\\CieloPhp\\": "src/"
+            "Mjbezer\\Cielo\\": "src/"
         }
     },
     "authors": [
